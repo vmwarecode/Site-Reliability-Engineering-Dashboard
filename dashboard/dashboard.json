@@ -1,0 +1,733 @@
+{
+   "entries": {"resourceKind": [
+      {
+         "resourceKindKey": "HostSystem",
+         "internalId": "resourceKind:id:2_::_",
+         "adapterKindKey": "VMWARE"
+      },
+      {
+         "resourceKindKey": "VirtualMachine",
+         "internalId": "resourceKind:id:1_::_",
+         "adapterKindKey": "VMWARE"
+      },
+      {
+         "resourceKindKey": "ClusterComputeResource",
+         "internalId": "resourceKind:id:0_::_",
+         "adapterKindKey": "VMWARE"
+      }
+   ]},
+   "dashboards": [{
+      "shared": false,
+      "temporary": false,
+      "hidden": false,
+      "creationTime": 1703164859456,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "lastUpdateUserId": "959455f9-d91c-4669-bbc4-70455d56ea5b",
+      "columnProportion": "1-1",
+      "importComplete": true,
+      "description": "",
+      "columnCount": 1,
+      "widgets": [
+         {
+            "collapsed": false,
+            "id": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 1,
+               "h": 6,
+               "y": 1
+            },
+            "type": "ResourceList",
+            "title": "Select Cluster",
+            "config": {
+               "refreshInterval": 300,
+               "resource": [],
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": 0},
+               "title": "Select Cluster",
+               "additionalColumns": [
+                  {
+                     "boxLabel": "DRS Enabled ?",
+                     "metricName": "Cluster Configuration|DRS Configuration|Enabled",
+                     "metricKey": "configuration|drsconfig|enabled",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "HA Enabled ?",
+                     "metricName": "Cluster Configuration|vSphere HA|HA Enabled",
+                     "metricKey": "configuration|dasConfig|enabled",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  }
+               ],
+               "mode": "all",
+               "filterMode": "tagPicker",
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "bus": [],
+                     "adapterKind": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "maintenanceSchedule": [],
+                     "adapterInstance": [],
+                     "collector": [],
+                     "tier": [],
+                     "state": [],
+                     "tag": [],
+                     "day": [],
+                     "status": []
+                  }
+               },
+               "depth": 1,
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": true}
+            },
+            "height": 324,
+            "states": [{
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A163.33334350585938%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253AresourceRating%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A97.00003051757812%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A93.33334350585938%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah47%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AmetricValue_%252525253A%252525253A_configuration%252525257CdasConfig%252525257Cenabled%2525255Edirection%2525253Ds%252525253AASC%2525255Eid%2525253Ds%252525253AmetricValue_%252525253A%252525253A_configuration%252525257CdasConfig%252525257Cenabled",
+               "key": "permResGrid_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_5c1123f7-fa2c-479b-b5e0-027c08b0fb44"
+            }]
+         },
+         {
+            "collapsed": false,
+            "id": "6196784a-2b1c-4737-9ce2-62f36ffb3767",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 4,
+               "h": 6,
+               "y": 1
+            },
+            "type": "Scoreboard",
+            "title": "KPI",
+            "config": {
+               "maxCellCount": 100,
+               "oldMetricValues": false,
+               "relationshipMode": {"relationshipMode": 0},
+               "valueSize": 24,
+               "title": "KPI",
+               "boxHeight": null,
+               "showResourceName": {"showResourceName": false},
+               "roundDecimals": null,
+               "mode": {"layoutMode": "fixedView"},
+               "labelSize": 16,
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "resInteractionMode": null,
+               "visualTheme": 8,
+               "showMetricName": {"showMetricName": true},
+               "refreshInterval": 300,
+               "resource": [],
+               "showDT": {"showDT": false},
+               "refreshContent": {"refreshContent": false},
+               "showMetricUnit": {"showMetricUnit": true},
+               "depth": 1,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceMetrics": [],
+                  "resourceKindMetrics": [
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": -1,
+                        "metricName": "Summary|Cluster Availability",
+                        "metricKey": "summary|cluster_availability",
+                        "handleOldColoring": false,
+                        "link": "",
+                        "resourceKindName": "Cluster Compute Resource",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "label": "Availability",
+                        "orangeBound": null,
+                        "unit": "Auto",
+                        "redBound": null,
+                        "id": "extModel5996-1",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Number of Running Hosts",
+                        "metricKey": "summary|number_running_hosts",
+                        "handleOldColoring": false,
+                        "link": "",
+                        "resourceKindName": "Cluster Compute Resource",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "label": "Hosts",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel5996-2",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": -1,
+                        "metricName": "CPU|Number of physical CPUs",
+                        "metricKey": "cpu|corecount_provisioned",
+                        "handleOldColoring": false,
+                        "link": "",
+                        "resourceKindName": "Cluster Compute Resource",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "label": "CPUs",
+                        "orangeBound": null,
+                        "unit": "Auto",
+                        "redBound": null,
+                        "id": "extModel5996-3",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": 5,
+                        "metricUnitId": -1,
+                        "metricName": "CPU|Contention",
+                        "metricKey": "cpu|capacity_contentionPct",
+                        "handleOldColoring": false,
+                        "link": "",
+                        "resourceKindName": "Cluster Compute Resource",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "label": "CPU Contention",
+                        "orangeBound": 10,
+                        "unit": "Auto",
+                        "redBound": 25,
+                        "id": "extModel5996-4",
+                        "colorMethod": 0
+                     },
+                     {
+                        "yellowBound": 5,
+                        "metricUnitId": "tb",
+                        "metricName": "Memory|Total Capacity",
+                        "metricKey": "mem|host_provisioned",
+                        "handleOldColoring": false,
+                        "link": "",
+                        "resourceKindName": "Cluster Compute Resource",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "label": "Memory",
+                        "orangeBound": 10,
+                        "unit": "TB",
+                        "redBound": 25,
+                        "id": "extModel5996-6",
+                        "colorMethod": 0
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": -1,
+                        "metricName": "Memory|Contention",
+                        "metricKey": "mem|host_contentionPct",
+                        "handleOldColoring": false,
+                        "link": "",
+                        "resourceKindName": "Cluster Compute Resource",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "label": "Memory Contention",
+                        "orangeBound": null,
+                        "unit": "Auto",
+                        "redBound": null,
+                        "id": "extModel5996-5",
+                        "colorMethod": 1
+                     }
+                  ],
+                  "subMode": "resourceKindAll"
+               },
+               "showSparkline": {"showSparkline": false},
+               "boxColumns": 2,
+               "periodLength": null
+            },
+            "height": 324
+         },
+         {
+            "collapsed": false,
+            "id": "b633efe9-4e31-4c4b-8409-04d10751707c",
+            "gridsterCoords": {
+               "w": 2,
+               "x": 7,
+               "h": 6,
+               "y": 1
+            },
+            "type": "IntSummaryCapacity",
+            "title": "Capacity Remaining",
+            "config": {},
+            "height": 323
+         },
+         {
+            "collapsed": false,
+            "id": "cecf54d1-9846-4da9-8b6d-081eda50022e",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 9,
+               "h": 6,
+               "y": 1
+            },
+            "type": "IntSummaryTimeRemaining",
+            "title": "Time Remaining",
+            "config": {},
+            "height": 324
+         },
+         {
+            "collapsed": false,
+            "id": "88493504-daec-41e9-a19f-8e10d0d408dc",
+            "gridsterCoords": {
+               "w": 4,
+               "x": 1,
+               "h": 6,
+               "y": 7
+            },
+            "type": "ParetoAnalysis",
+            "title": "Top-10 CPU offenders",
+            "config": {
+               "percentileValue": null,
+               "regenerationTime": 15,
+               "barsCount": 10,
+               "metricName": "",
+               "topOption": "metricsHighestUtilization",
+               "refreshInterval": 300,
+               "resource": [],
+               "maxValue": 100,
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": -1},
+               "title": "Top-10 CPU offenders",
+               "additionalColumns": [],
+               "roundDecimals": 0,
+               "metricUnit": {
+                  "metricUnitId": "percent",
+                  "metricUnitName": "%"
+               },
+               "mode": "all",
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "filterMode": "tagPicker",
+               "tagFilter": null,
+               "depth": 10,
+               "metric": {
+                  "metricKey": "cpu|demandPct",
+                  "name": "CPU|Demand (%)"
+               },
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "filterOldMetrics": {"filterOldMetrics": false}
+            },
+            "height": 324
+         },
+         {
+            "collapsed": false,
+            "id": "a9622607-cfcb-4f27-bb28-fc2b1f08e992",
+            "gridsterCoords": {
+               "w": 4,
+               "x": 1,
+               "h": 6,
+               "y": 13
+            },
+            "type": "ParetoAnalysis",
+            "title": "Top-10 Memory offenders",
+            "config": {
+               "percentileValue": null,
+               "regenerationTime": 15,
+               "barsCount": 10,
+               "metricName": "",
+               "topOption": "metricsHighestUtilization",
+               "refreshInterval": 300,
+               "resource": [],
+               "maxValue": null,
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "title": "Top-10 Memory offenders",
+               "additionalColumns": [],
+               "roundDecimals": 0,
+               "metricUnit": {
+                  "metricUnitId": "gb",
+                  "metricUnitName": "GB"
+               },
+               "mode": "all",
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "filterMode": "tagPicker",
+               "tagFilter": null,
+               "depth": 10,
+               "metric": {
+                  "metricKey": "mem|consumed_average",
+                  "name": "Memory|Consumed (KB)"
+               },
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "filterOldMetrics": {"filterOldMetrics": false}
+            },
+            "height": 324
+         },
+         {
+            "collapsed": false,
+            "id": "4f8a7499-5c54-425b-858f-d24da8d29ae4",
+            "gridsterCoords": {
+               "w": 4,
+               "x": 5,
+               "h": 12,
+               "y": 7
+            },
+            "type": "MetricChart",
+            "title": "VM consumption details",
+            "config": {
+               "depth": 1,
+               "refreshInterval": 300,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceMetrics": [],
+                  "resourceKindMetrics": [
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "CPU|Usage",
+                        "metricKey": "cpu|usage_average",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-1",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "CPU|Demand",
+                        "metricKey": "cpu|demandPct",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-3",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "CPU|Contention",
+                        "metricKey": "cpu|capacity_contentionPct",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-2",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "CPU|Ready",
+                        "metricKey": "cpu|readyPct",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-4",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "Memory|Usage",
+                        "metricKey": "mem|usage_average",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-7",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "Memory|Consumed",
+                        "metricKey": "mem|consumedPct",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-5",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "Memory|Contention",
+                        "metricKey": "mem|host_contentionPct",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-6",
+                        "colorMethod": 2
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": "percent",
+                        "metricName": "Memory|Balloon",
+                        "metricKey": "mem|balloonPct",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Virtual Machine",
+                        "isStringMetric": false,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "orangeBound": null,
+                        "unit": "%",
+                        "redBound": null,
+                        "id": "extModel10531-8",
+                        "colorMethod": 2
+                     }
+                  ],
+                  "subMode": "resourceKindAll"
+               },
+               "resource": [],
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": 0},
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "title": "VM consumption details",
+               "resInteractionMode": null
+            },
+            "height": 665,
+            "states": [
+               {
+                  "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateRange1_permMetricChart_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_4f8a7499-5c54-425b-858f-d24da8d29ae4"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_pan_permMetricChart_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_4f8a7499-5c54-425b-858f-d24da8d29ae4"
+               },
+               {
+                  "value": "o%3A",
+                  "key": "permMetricChart_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_4f8a7499-5c54-425b-858f-d24da8d29ae4"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_zoomAllGraphs_permMetricChart_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_4f8a7499-5c54-425b-858f-d24da8d29ae4"
+               }
+            ]
+         },
+         {
+            "collapsed": false,
+            "id": "7f286877-34bf-4f63-a4a0-4660daa2e3f9",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 9,
+               "h": 6,
+               "y": 7
+            },
+            "type": "Heatmap",
+            "title": "Heatmap",
+            "config": {
+               "mode": "all",
+               "configs": [{
+                  "colorBy": {
+                     "metricKey": "mem|demand|workload",
+                     "value": "Memory|Demand|Workload (%)"
+                  },
+                  "focusOnGroups": true,
+                  "color": {"thresholds": {
+                     "values": [
+                        0,
+                        40,
+                        70,
+                        100
+                     ],
+                     "colors": [
+                        "#8ABF5B",
+                        "#8ABF5B",
+                        "#EDD784",
+                        "#D8847B",
+                        "#E4695E"
+                     ]
+                  }},
+                  "sizeBy": {
+                     "metricKey": "cpu|demandPct",
+                     "value": "CPU|Demand (%)"
+                  },
+                  "relationalGrouping": false,
+                  "groupBy": {
+                     "resourceKind": "ClusterComputeResource",
+                     "adapterKind": "VMWARE",
+                     "typeId": "resourceKind:id:0_::_",
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "parentText": "vCenter",
+                     "parentId": "VMWARE"
+                  },
+                  "attributeKind": {"value": ""},
+                  "thenBy": null,
+                  "mode": {"mode": false},
+                  "resourceKind": "resourceKind:id:2_::_",
+                  "filterMode": "tagPicker",
+                  "solidColoring": true,
+                  "name": "CPU"
+               }],
+               "depth": 1,
+               "refreshInterval": 300,
+               "resource": [],
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": -1},
+               "selfProvider": {"selfProvider": false},
+               "title": "Heatmap",
+               "value": 0
+            },
+            "height": 324,
+            "states": [{
+               "value": "o%3A",
+               "key": "perm_HeatMap_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_7f286877-34bf-4f63-a4a0-4660daa2e3f9"
+            }]
+         },
+         {
+            "collapsed": false,
+            "id": "c5fe5267-baf6-4703-b02c-0e63b0491e10",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 9,
+               "h": 6,
+               "y": 13
+            },
+            "type": "AlertList",
+            "title": "Alerts",
+            "config": {
+               "alertImpact": [],
+               "alertAction": [],
+               "refreshInterval": 300,
+               "resource": [],
+               "refreshContent": {"refreshContent": false},
+               "relationshipMode": {"relationshipMode": 0},
+               "criticalityLevel": [],
+               "title": "Alerts",
+               "type": [],
+               "mode": "all",
+               "filterMode": "tagPicker",
+               "tagFilter": null,
+               "depth": 1,
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "state": [],
+               "status": []
+            },
+            "height": 324,
+            "states": [
+               {
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateFilter_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_c5fe5267-baf6-4703-b02c-0e63b0491e10"
+               },
+               {
+                  "value": "s%3Atime",
+                  "key": "permViewMode_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_c5fe5267-baf6-4703-b02c-0e63b0491e10"
+               },
+               {
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah16%255Eo%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AstartTimeUtc%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AstartTimeUtc",
+                  "key": "permAlertGrid_perm_widget_832322bb-881e-44bf-8ed3-56aea4f60d52_c5fe5267-baf6-4703-b02c-0e63b0491e10"
+               }
+            ]
+         }
+      ],
+      "userId": "959455f9-d91c-4669-bbc4-70455d56ea5b",
+      "states": [],
+      "homeTab": false,
+      "name": "Site Reliability Engineering - Explore",
+      "gridsterMaxColumns": 12,
+      "rank": 0,
+      "disabled": false,
+      "id": "832322bb-881e-44bf-8ed3-56aea4f60d52",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [
+         {
+            "widgetIdProvider": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "type": "resourceId",
+            "widgetIdReceiver": "6196784a-2b1c-4737-9ce2-62f36ffb3767"
+         },
+         {
+            "widgetIdProvider": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "type": "resourceId",
+            "widgetIdReceiver": "cecf54d1-9846-4da9-8b6d-081eda50022e"
+         },
+         {
+            "widgetIdProvider": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "type": "resourceId",
+            "widgetIdReceiver": "b633efe9-4e31-4c4b-8409-04d10751707c"
+         },
+         {
+            "widgetIdProvider": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "type": "resourceId",
+            "widgetIdReceiver": "88493504-daec-41e9-a19f-8e10d0d408dc"
+         },
+         {
+            "widgetIdProvider": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "type": "resourceId",
+            "widgetIdReceiver": "a9622607-cfcb-4f27-bb28-fc2b1f08e992"
+         },
+         {
+            "widgetIdProvider": "88493504-daec-41e9-a19f-8e10d0d408dc",
+            "type": "resourceId",
+            "widgetIdReceiver": "4f8a7499-5c54-425b-858f-d24da8d29ae4"
+         },
+         {
+            "widgetIdProvider": "a9622607-cfcb-4f27-bb28-fc2b1f08e992",
+            "type": "resourceId",
+            "widgetIdReceiver": "4f8a7499-5c54-425b-858f-d24da8d29ae4"
+         },
+         {
+            "widgetIdProvider": "5c1123f7-fa2c-479b-b5e0-027c08b0fb44",
+            "type": "resourceId",
+            "widgetIdReceiver": "7f286877-34bf-4f63-a4a0-4660daa2e3f9"
+         },
+         {
+            "widgetIdProvider": "7f286877-34bf-4f63-a4a0-4660daa2e3f9",
+            "type": "resourceId",
+            "widgetIdReceiver": "c5fe5267-baf6-4703-b02c-0e63b0491e10"
+         }
+      ],
+      "lastUpdateTime": 1703166908421
+   }],
+   "uuid": "ca2aaffe-dd0f-41c8-858d-6eb261cbda69"
+}
